@@ -9,11 +9,9 @@ output        = job.$(ClusterID).$(ProcID).out
 error         = job.$(ClusterID).$(ProcID).err
 log           = job.$(ClusterID).$(ProcID).log
 
-
 should_transfer_files   = Yes
 when_to_transfer_output = ON_EXIT
 
-requirements   = (OSGVO_OS_STRING == "RHEL 7")
 request_cpus   = 1
 request_memory = 512MB
 request_disk   = 512MB
