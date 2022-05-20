@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -22,7 +22,7 @@ for line in my_file:
 my_file.close()
 
 input_stem = input_filename.split('.')[0]
-output_filename = "counts."+input_stem+".txt"
+output_filename = "count."+input_stem+".txt"
 sorted_words = sorted(words.items(), key=operator.itemgetter(1))
 my_file = open(output_filename, 'w')
 for word in sorted_words:
